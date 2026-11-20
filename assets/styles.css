@@ -136,3 +136,13 @@ details p{margin:12px 0 0;color:#2f403e}
  .sticky-cta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;background:var(--forest);color:#fff;text-align:center;padding:15px;border-radius:8px;font-weight:600;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.18);transition:opacity .2s}
  .sticky-cta.hide{opacity:0;pointer-events:none}
 }
+.pains li{font:18px/1.55 var(--sans);padding-left:34px}
+.pains li strong{display:block;font:400 22px/1.35 var(--serif);margin-bottom:4px;color:var(--ink)}
+.src-quote{margin:18px 0 0;max-width:700px;font:19px/1.5 var(--serif);color:var(--ink);border-left:3px solid var(--sage);padding-left:16px}
+.src-quote cite{display:block;font:normal 14px var(--sans);color:var(--muted);margin-top:6px}
+.offers-5{grid-template-columns:repeat(6,1fr)}
+.offers-5 .offer{grid-column:span 2}
+.offers-5 .offer:nth-child(4){grid-column:2/span 2}
+.offers-5 .offer .fine{margin-top:12px;font-size:14px}
+.skills p{margin:0 0 10px}
+@media (max-width:960px){.offers-5{grid-template-columns:1fr}.offers-5 .offer,.offers-5 .offer:nth-child(4){grid-column:auto}}
