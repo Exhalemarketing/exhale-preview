@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<title>Exhale role page template chart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root{
+    --paper:#faf8f3;--ink:#1d2b2a;--forest:#1f4a46;--forest-d:#163734;--sage:#5f7f6e;
+    --muted:#4f5f5c;--line:#d9dfdb;--tint:#eef2ed;--gold:#a8782a;
+    --sans:"Source Sans 3",system-ui,sans-serif;--serif:"Source Serif 4",Georgia,serif;
+    --custom-bg:#f8efd8;--optional-bg:#eef2ed;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--paper);color:var(--ink)}
+  body{font:18px/1.45 var(--sans);-webkit-font-smoothing:antialiased;padding:48px 56px 56px}
+  h1{font:400 34px/1.2 var(--serif);letter-spacing:-.6px;margin:0 0 8px}
+  .sub{color:var(--muted);font-size:16px;margin:0 0 22px;max-width:980px}
+  .legend{display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin:0 0 28px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:10px}
+  .key{display:flex;align-items:center;gap:10px;font-size:15px}
+  .swatch{width:22px;height:22px;border-radius:5px;flex:none}
+  .swatch.fixed{background:var(--tint);border:1.6px solid var(--forest)}
+  .swatch.custom{background:var(--custom-bg);border:1.6px solid var(--gold)}
+  .swatch.optional{background:#fff;border:1.6px dashed var(--sage)}
+  .key strong{font-weight:700}
+  .vine{display:flex;justify-content:center;color:var(--sage);opacity:.7;margin:0 0 22px}
+  .vine svg{width:min(600px,90%);height:36px}
+  .grid{display:grid;grid-template-columns:230px 1fr 28px 1.35fr;gap:12px 14px;align-items:stretch}
+  .h{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);padding:0 4px 4px}
+  .h.arrow{visibility:hidden}
+  .beat{background:var(--forest);color:#fff;border-radius:8px;padding:14px 16px;display:flex;align-items:center;font:600 16px/1.25 var(--sans)}
+  .q{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;align-items:center;font-size:17px}
+  .arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:22px}
+  .sec{border-radius:8px;padding:12px 14px 12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+  .sec .copy{font-size:16px;line-height:1.35}
+  .sec .copy small{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+  .chip{flex:none;font:700 10px/1 var(--sans);letter-spacing:1px;text-transform:uppercase;padding:6px 8px;border-radius:999px;white-space:nowrap}
+  .chips{display:flex;flex-direction:column;gap:5px;align-items:flex-end}
+  .sec.fixed{background:var(--tint);border:1px solid #cfd8d3}
+  .sec.custom{background:var(--custom-bg);border:1px solid #e2d0a4}
+  .sec.optional{background:#fff;border:1.6px dashed var(--sage)}
+  .sec.mixed{background:var(--custom-bg);border:1px solid #e2d0a4}
+  .chip.fixed{background:#fff;color:var(--forest);border:1px solid var(--forest)}
+  .chip.custom{background:#fff;color:#7a5614;border:1px solid var(--gold)}
+  .chip.optional{background:#fff;color:var(--forest);border:1px dashed var(--sage)}
+  .note{margin:26px 0 0;font-size:14px;color:var(--muted);max-width:980px}
+</style>
+</head>
+<body>
+  <h1>Exhale role page template: the story arc, mapped to the hiring manager's questions</h1>
+  <p class="sub">Built on the services page design. A hiring manager is not reading a resume. They want to know, in this order, whether the page is for them, whether she understood the posting, what she is actually offering, and whether she can do the work.</p>
+  <div class="legend">
+    <div class="key"><span class="swatch custom"></span><span><strong>Custom</strong> &nbsp;Filled from the posting, the resume, and the offer. Marked EXAMPLE in the template.</span></div>
+    <div class="key"><span class="swatch fixed"></span><span><strong>Fixed</strong> &nbsp;Reused from the services page, word for word, so the two sites do not drift.</span></div>
+    <div class="key"><span class="swatch optional"></span><span><strong>Optional</strong> &nbsp;Personal connection (her yes, each time), personal video (top matches only), or the donor leak chart (donor roles only).</span></div>
+  </div>
+  <div class="vine" aria-hidden="true">
+    <svg viewBox="0 0 600 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="148" cy="20" r="2.4"/><path d="M151 20 H228"/>
+      <path d="M228 20 C258 4 278 36 300 20 S342 4 372 20"/>
+      <path d="M262 13 C258 4 266 -1 274 1 C275 9 270 14 262 13 Z"/>
+      <path d="M338 27 C342 36 334 41 326 39 C325 31 330 26 338 27 Z"/>
+      <path d="M372 20 H449"/><circle cx="452" cy="20" r="2.4"/>
+    </svg>
+  </div>
+  <div class="grid">
+    <div class="h">Story beat</div>
+    <div class="h">Hiring manager's question</div>
+    <div class="h arrow">-</div>
+    <div class="h">Page section</div>
+
+    <div class="beat">1. Arrival</div>
+    <div class="q">Why is this in front of me? Is it private?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">Private banner for {{org_name}}, then the exhale header, fonts, colours and leaf-and-vine signature.<small>#top &nbsp;noindex, not listed in search</small></div>
+      <div class="chips"><span class="chip custom">Custom</span><span class="chip fixed">Fixed chrome</span></div>
+    </div>
+
+    <div class="beat">2. Their world</div>
+    <div class="q">Is this for me? Did she actually read our posting?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">Named hero: contact, org, role, and the pain in the posting. Offer framed in one breath. Portrait and credentials stay the same.<small>#hero &nbsp;{{contact_name}} {{role_title}} {{hero_lead}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span><span class="chip fixed">Fixed creds</span></div>
+    </div>
+
+    <div class="beat">3. Their pain</div>
+    <div class="q">Do you get what we're up against?</div>
+    <div class="arrow">→</div>
+    <div class="sec custom">
+      <div class="copy">"I read the posting." Four or five everyday moments pulled from the posting, then an empathy turn.<small>#posting &nbsp;{{posting_pain_points}} {{empathy_turn}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span></div>
+    </div>
+
+    <div class="beat">4. What it costs</div>
+    <div class="q">What are we quietly losing?</div>
+    <div class="arrow">→</div>
+    <div class="sec optional">
+      <div class="copy">Donor journey leak diagram and the FEP retention chart, reused from the services page. Include only for donor, fundraising or retention roles.<small>#leaks &nbsp;{{include_donor_leak_block}}</small></div>
+      <div class="chips"><span class="chip optional">Optional</span><span class="chip fixed">Fixed copy</span></div>
+    </div>
+
+    <div class="beat">5. Empathy</div>
+    <div class="q">Why us? Is this spray and pray?</div>
+    <div class="arrow">→</div>
+    <div class="sec custom">
+      <div class="copy">Why this organization, in her voice, using only experience she can honestly claim. A deeper personal note stays off unless she approves it, each time.<small>#why &nbsp;{{why_this_org}} {{personal_connection}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span><span class="chip optional">Connection</span></div>
+    </div>
+
+    <div class="beat">6. The turn</div>
+    <div class="q">Wait, what is this? A resume or something else?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">The managed service offer: do the work in the posting, at about half the posted salary, never below CA$3,000 a month. A discounted pilot is mentioned, not priced, until she finalizes terms.<small>#offer &nbsp;{{price_vs_salary}}</small></div>
+      <div class="chips"><span class="chip custom">Numbers</span><span class="chip fixed">Fixed frame</span></div>
+    </div>
+
+    <div class="beat">7. The fit</div>
+    <div class="q">Can she actually do the job we posted?</div>
+    <div class="arrow">→</div>
+    <div class="sec custom">
+      <div class="copy">Requirement match table: each posting requirement, resume evidence, and an honest Match, Partial or Gap flag. No invented metrics.<small>#fit &nbsp;{{requirement_match_table}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span></div>
+    </div>
+
+    <div class="beat">8. The guide</div>
+    <div class="q">Who are you? Have you been here?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">"Hi, I'm Alessandra," reused from the services page. A personal video slot appears only for the highest match scores.<small>#about &nbsp;{{personal_video}}</small></div>
+      <div class="chips"><span class="chip fixed">Fixed about</span><span class="chip optional">Video</span></div>
+    </div>
+
+    <div class="beat">9. The plan</div>
+    <div class="q">What would the first season actually look like?</div>
+    <div class="arrow">→</div>
+    <div class="sec custom">
+      <div class="copy">First 90 days in three phases, tied to this posting. A plan, not a results claim. They still approve anything that goes out.<small>#plan &nbsp;{{first_90_days}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span></div>
+    </div>
+
+    <div class="beat">10. How we work</div>
+    <div class="q">Will you do the work, or vanish after a report?</div>
+    <div class="arrow">→</div>
+    <div class="sec fixed">
+      <div class="copy">Four-step path: a free 20-minute call, listen, embed for 1 to 3 months, stay accountable.<small>#how</small></div>
+      <div class="chips"><span class="chip fixed">Fixed</span></div>
+    </div>
+
+    <div class="beat">11. Proof</div>
+    <div class="q">Can you prove it?</div>
+    <div class="arrow">→</div>
+    <div class="sec fixed">
+      <div class="copy">Customer churn from 18% to 15%, plus the five testimonials from the services page. Not recast as a donor-retention result.<small>#proof</small></div>
+      <div class="chips"><span class="chip fixed">Fixed</span></div>
+    </div>
+
+    <div class="beat">12. Board numbers</div>
+    <div class="q">What does this cost against the hire we budgeted?</div>
+    <div class="arrow">→</div>
+    <div class="sec custom">
+      <div class="copy">Posted salary versus the monthly fee, side by side, with the CA$3,000 floor and a soft mention of a pilot once talking.<small>#cost &nbsp;{{price_vs_salary}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span></div>
+    </div>
+
+    <div class="beat">13. Risk</div>
+    <div class="q">Our donors, our data, who owns this?</div>
+    <div class="arrow">→</div>
+    <div class="sec fixed">
+      <div class="copy">Trust and oversight: they approve what goes out, agreed access only, one accountable person, straight answers.<small>#trust</small></div>
+      <div class="chips"><span class="chip fixed">Fixed</span></div>
+    </div>
+
+    <div class="beat">14. Last worries</div>
+    <div class="q">Is this even a job application? What else?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">Role questions (application versus managed service, later hiring, office or remote) plus the standard services-page FAQ.<small>#faq &nbsp;{{work_mode_answer}} {{faq_extra}}</small></div>
+      <div class="chips"><span class="chip fixed">Fixed</span><span class="chip custom">Custom</span></div>
+    </div>
+
+    <div class="beat">15. Invitation</div>
+    <div class="q">What's next? What do I commit to?</div>
+    <div class="arrow">→</div>
+    <div class="sec mixed">
+      <div class="copy">A relief picture that names the org, then the free 20-minute call form, pre-filled with their organization.<small>#contact &nbsp;{{contact_headline}}</small></div>
+      <div class="chips"><span class="chip custom">Custom</span><span class="chip fixed">Fixed form</span></div>
+    </div>
+  </div>
+  <p class="note">CTA on every role page: "Let's talk about this role," in the header, the hero, sticky on phones, and the form. Each page is noindex and is sent only to the hiring contact. Nothing goes live without Alessandra's approval.</p>
+</body>
+</html>
