@@ -62,3 +62,4 @@
 .contact-solo .btn{background:#fff;color:var(--forest);margin-top:8px}
 .contact-solo .btn:hover{background:#e6efeb;color:var(--forest-d)}
 .contact-solo .next{margin:8px 0 22px}
+.asks{display:grid;gap:14px;margin-top:18px}.asks .ask{background:#fff;border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:10px;padding:16px 20px}.asks .ask h3{font-size:18px;margin:0 0 6px}.asks .ask p{margin:0}
