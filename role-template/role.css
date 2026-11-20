@@ -57,3 +57,8 @@
 .eyebrow .ex-tag,.label .ex-tag,.private-banner .ex-tag{letter-spacing:1.1px;text-transform:uppercase;font-weight:700;position:relative;top:-1px}
 
 .hero-fields{margin:-6px 0 16px}
+
+.contact-solo{position:relative;max-width:720px}
+.contact-solo .btn{background:#fff;color:var(--forest);margin-top:8px}
+.contact-solo .btn:hover{background:#e6efeb;color:var(--forest-d)}
+.contact-solo .next{margin:8px 0 22px}

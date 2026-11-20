@@ -7,12 +7,12 @@
   ],
   "live_path_pattern": "https://exhalemarketing.com/for/{{org_slug}}",
   "robots": "noindex, nofollow",
-  "approval": "Alessandra must approve every page before it goes live. Personal connections need a separate yes, each time. Personal video is only for the highest match scores.",
+  "approval": "Alessandra must approve every page before it goes live. Personal connections need a separate yes, each time. Personal video is only for the highest match scores. Role pages have no form; the CTA is a mailto to alessandra@exhalemarketing.com. Do not send or submit anything without her approval.",
   "voice": "Warm, casual, plain, her words. No em dashes, no AI mention, nothing invented. Claims only from the resume or already-approved services-page copy.",
   "pricing_rules": {
     "monthly_fee": "max(CA$3000, half of the posted annual salary / 12). If the posting shows a range, use the midpoint, then say 'about half the posted salary range.' Keep the posting currency when possible. Never go below CA$3,000 a month, converting if the posting is not in CAD.",
     "pilot": "Do not print a specific discount or ramp until Alessandra finalizes pilot terms. The page only says a short discounted pilot can be discussed once talking, with terms agreed together.",
-    "claims": "Do not treat the 18% to 15% churn figure as a nonprofit donor-retention result. It is customer churn, as on the services page. Do not invent World Vision, Stanley Park Ecology Society or Salvation Army titles, dates or metrics that are still marked [ADD] on the resume. Do not mention AI or the Anthropic certificate."
+    "claims": "Do not treat the 18% to 15% churn figure as a nonprofit donor-retention result. It is customer churn, as on the services page. The current World Vision contract (Emergency Response Process Optimization Consultant, August 2026 to present) is emergency response process optimization only. Never imply it is marketing or donor communications work. Donor and marketing proof from World Vision comes only from the earlier Senior Marketing Advisor role on Impact Engine, March 2024 to October 2025. Do not invent World Vision, Stanley Park Ecology Society or Salvation Army titles, dates or metrics. Do not mention AI or the Anthropic certificate."
   },
   "example": {
     "note": "All sample filler in index.html is fictional and labelled EXAMPLE. Do not send or publish the Cedar & Tide Conservancy page.",
@@ -213,7 +213,7 @@
       "section": "the fit",
       "type": "CUSTOM",
       "what_fills_it": "A row for each real requirement in the posting. Columns: the posting asks for, what I bring, and a flag of Match, Partial or Gap. Evidence must be resume-backed or already on the services page. Gaps stay visible. Never invent a metric, title, tool or result to force a Match. Salesforce donor-journey results that are still [ADD] on the resume must stay unclaimed.",
-      "source": "The posting's requirements, mapped to the resume (World Vision Senior Marketing Advisor; 20+ years retention and CRM; Salesforce plus HubSpot, Pardot, Marketo, Eloqua, SharpSpring; up to 40 accounts; customer churn 18% to 15%; commercial results only where relevant and clearly labelled; BCIT Marketing Communications Management; Chartered Marketer). Stanley Park Ecology Society and the Salvation Army may be named, without invented titles, dates or results. Environmental Fund of BC may be named as on the services page."
+      "source": "The posting's requirements, mapped to the resume. World Vision donor or marketing evidence may only cite the Senior Marketing Advisor / Impact Engine role, March 2024 to October 2025, never the current Emergency Response Process Optimization Consultant contract. Also: 20+ years retention and CRM; Salesforce plus HubSpot, Pardot, Marketo, Eloqua, SharpSpring; up to 40 accounts; customer churn 18% to 15%; commercial results only where relevant and clearly labelled; BCIT Marketing Communications Management; Chartered Marketer. Stanley Park Ecology Society and the Salvation Army may be named, without invented titles, dates or results. Environmental Fund of BC may be named as on the services page."
     },
     {
       "name": "match_score",
@@ -275,22 +275,15 @@
       "name": "contact_lead",
       "section": "invitation",
       "type": "CUSTOM",
-      "what_fills_it": "Two or three short sentences of the relief picture, then an invitation to talk about this role.",
+      "what_fills_it": "Two or three short sentences of the relief picture, then an invitation to email about this role.",
       "source": "The posting's desired outcomes, said plainly, with no promised metrics."
     },
     {
-      "name": "form_subject",
-      "section": "form, mailto",
+      "name": "mailto_subject",
+      "section": "invitation, header, hero, and sticky CTA",
       "type": "CUSTOM",
-      "what_fills_it": "Email subject for form submissions and the mailto fallback. Pattern: Conversation about the {{role_title}} role at {{org_name}}.",
+      "what_fills_it": "Email subject for every mailto CTA. Pattern: Conversation about the {{role_title}} role at {{org_name}}. There is no form on role pages.",
       "source": "role_title and org_name."
-    },
-    {
-      "name": "form_thanks_url",
-      "section": "form",
-      "type": "CUSTOM, usually FIXED once hosting is set",
-      "what_fills_it": "The URL FormSubmit should send people to after they write in. Until a role-page thanks page exists, use the same thanks page as the services site, or https://exhalemarketing.com/thanks.html once that is live.",
-      "source": "Hosting setup. Confirm before the first live page."
     },
     {
       "name": "reply_time",
@@ -308,13 +301,13 @@
     },
     {
       "id": "credentials",
-      "what": "Senior Marketing Advisor, World Vision. 20+ years in CRM and retention. Chartered Marketer (CM).",
+      "what": "Emergency Response Process Optimization Consultant, World Vision (current contract, emergency response process optimization only). 20+ years in CRM and retention. Chartered Marketer (CM).",
       "source": "Services page and resume."
     },
     {
       "id": "about",
-      "what": "Hi, I'm Alessandra, including the World Vision, Environmental Fund of BC, Stanley Park Ecology Society and Salvation Army lines, plus the availability line and the Vancouver / remote line.",
-      "source": "Services page about section, reused word for word so the two pages do not drift."
+      "what": "Currently on contract with World Vision as an Emergency Response Process Optimization Consultant, August 2026 to present, for emergency response process optimization only, not marketing or donor communications. Donor and marketing work at World Vision was earlier: Senior Marketing Advisor on Impact Engine, March 2024 to October 2025. Then the Environmental Fund of BC, Stanley Park Ecology Society and Salvation Army lines, the availability line, and the Vancouver / remote line. Do not invent duties or results for the current consultant contract. Public LinkedIn still lists only the Senior Marketing Advisor role (ended October 2025).",
+      "source": "Alessandra's confirmation: current title, August 2026 to present, and that the contract is only emergency response process optimization. Senior Marketing Advisor dates confirmed on her public LinkedIn. Remaining about copy from the services page, with the old 'Most recently I was Senior Marketing Advisor' framing replaced."
     },
     {
       "id": "path",
