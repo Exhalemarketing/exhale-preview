@@ -1,0 +1,340 @@
+{
+  "template": "Exhale per-role personalized pitch page",
+  "html": "role-template/index.html",
+  "styles": [
+    "../assets/styles.css",
+    "role.css"
+  ],
+  "live_path_pattern": "https://exhalemarketing.com/for/{{org_slug}}",
+  "robots": "noindex, nofollow",
+  "approval": "Alessandra must approve every page before it goes live. Personal connections need a separate yes, each time. Personal video is only for the highest match scores.",
+  "voice": "Warm, casual, plain, her words. No em dashes, no AI mention, nothing invented. Claims only from the resume or already-approved services-page copy.",
+  "pricing_rules": {
+    "monthly_fee": "max(CA$3000, half of the posted annual salary / 12). If the posting shows a range, use the midpoint, then say 'about half the posted salary range.' Keep the posting currency when possible. Never go below CA$3,000 a month, converting if the posting is not in CAD.",
+    "pilot": "Do not print a specific discount or ramp until Alessandra finalizes pilot terms. The page only says a short discounted pilot can be discussed once talking, with terms agreed together.",
+    "claims": "Do not treat the 18% to 15% churn figure as a nonprofit donor-retention result. It is customer churn, as on the services page. Do not invent World Vision, Stanley Park Ecology Society or Salvation Army titles, dates or metrics that are still marked [ADD] on the resume. Do not mention AI or the Anthropic certificate."
+  },
+  "example": {
+    "note": "All sample filler in index.html is fictional and labelled EXAMPLE. Do not send or publish the Cedar & Tide Conservancy page.",
+    "org_name": "Cedar & Tide Conservancy",
+    "org_slug": "cedar-and-tide",
+    "role_title": "Donor Engagement Manager",
+    "contact_name": "Jordan Hale",
+    "contact_title": "Director of Development",
+    "posted_salary_annual": 84000,
+    "currency": "CAD",
+    "monthly_fee": 3500
+  },
+  "fields": [
+    {
+      "name": "org_name",
+      "section": "banner, hero, form, metadata",
+      "type": "CUSTOM",
+      "what_fills_it": "The organization's legal or commonly used name, exactly as they use it.",
+      "source": "The job posting, RFP, or the hiring contact's email."
+    },
+    {
+      "name": "org_slug",
+      "section": "URL",
+      "type": "CUSTOM",
+      "what_fills_it": "A short lowercase hyphenated folder name for exhalemarketing.com/for/<org-slug>.",
+      "source": "Derived from org_name. Must be unique. Check the page list before publishing."
+    },
+    {
+      "name": "page_url",
+      "section": "metadata",
+      "type": "CUSTOM",
+      "what_fills_it": "The public URL once hosted on cPanel, usually https://exhalemarketing.com/for/{{org_slug}}.",
+      "source": "Built from org_slug after Alessandra approves the page."
+    },
+    {
+      "name": "page_title",
+      "section": "metadata",
+      "type": "CUSTOM",
+      "what_fills_it": "Browser title. Pattern: A note for {{org_name}} | Exhale Marketing.",
+      "source": "org_name."
+    },
+    {
+      "name": "meta_description",
+      "section": "metadata",
+      "type": "CUSTOM",
+      "what_fills_it": "One or two sentences for link previews. Name the org and the role. Keep it private-sounding, not salesy.",
+      "source": "org_name and role_title."
+    },
+    {
+      "name": "og_title",
+      "section": "metadata",
+      "type": "CUSTOM",
+      "what_fills_it": "Social and chat link preview title. Usually the same as the hero headline.",
+      "source": "hero_headline + hero_headline_emphasis."
+    },
+    {
+      "name": "contact_name",
+      "section": "hero eyebrow",
+      "type": "CUSTOM",
+      "what_fills_it": "The hiring contact's first and last name. If the name is unknown, drop the name and address the title or 'the hiring team at {{org_name}}'.",
+      "source": "The posting, LinkedIn, or the RFP contact line. Do not guess a name."
+    },
+    {
+      "name": "contact_title",
+      "section": "hero eyebrow",
+      "type": "CUSTOM",
+      "what_fills_it": "The hiring contact's job title, if known.",
+      "source": "The posting or the person's public title. Leave blank if unsure."
+    },
+    {
+      "name": "role_title",
+      "section": "hero, form, email subject",
+      "type": "CUSTOM",
+      "what_fills_it": "The role title exactly as posted.",
+      "source": "The job posting or RFP."
+    },
+    {
+      "name": "hero_eyebrow",
+      "section": "hero",
+      "type": "CUSTOM",
+      "what_fills_it": "A private note for {{contact_name}}, {{contact_title}} at {{org_name}}. Shorten if a piece is missing.",
+      "source": "contact_name, contact_title, org_name."
+    },
+    {
+      "name": "hero_headline",
+      "section": "hero",
+      "type": "CUSTOM",
+      "what_fills_it": "The first sentence of the H1. Pattern: The {{role_title}} role is still open. Keep it short.",
+      "source": "role_title. Adjust slightly if the posting is an RFP rather than a job ('This brief is still open.')."
+    },
+    {
+      "name": "hero_headline_emphasis",
+      "section": "hero",
+      "type": "FIXED pattern, slight CUSTOM if needed",
+      "what_fills_it": "The forest-coloured second sentence of the H1. Default: I'll take it from here. Matches the services page rhythm. Do not invent a punchier line.",
+      "source": "Services page hero, reused on purpose."
+    },
+    {
+      "name": "hero_lead",
+      "section": "hero",
+      "type": "CUSTOM",
+      "what_fills_it": "One or two sentences in her voice that name the pain in the posting, without quoting it stiffly. No invented details.",
+      "source": "The posting's responsibilities, challenges and 'why this role exists' language, rewritten plainly."
+    },
+    {
+      "name": "pain_headline",
+      "section": "the posting",
+      "type": "CUSTOM",
+      "what_fills_it": "A short H2 that says she has read their posting. Default pattern: The posting already says what's slipping.",
+      "source": "The posting, plus the services-page tone."
+    },
+    {
+      "name": "posting_pain_points",
+      "section": "the posting",
+      "type": "CUSTOM",
+      "what_fills_it": "Four or five everyday moments, written like the services page 'Sound familiar?' list, each pulled from something the posting actually says or clearly implies. No generic nonprofit filler.",
+      "source": "The job posting or RFP only."
+    },
+    {
+      "name": "empathy_turn",
+      "section": "the posting",
+      "type": "CUSTOM, FIXED pattern",
+      "what_fills_it": "One turn sentence after the pain list. Pattern: None of this is because your people don't care. Then one specific clause that fits this team.",
+      "source": "Services page empathy line, adapted to the posting. Do not invent internal drama."
+    },
+    {
+      "name": "include_donor_leak_block",
+      "section": "where gifts slip away",
+      "type": "OPTIONAL, FIXED copy",
+      "what_fills_it": "True only when the role is about donors, fundraising, stewardship or retention. False for comms, operations or brand roles that are not donor-facing. When true, reuse the services-page journey and FEP chart word for word.",
+      "source": "A judgement from the posting. Chart data stays cited to Fundraising Effectiveness Project, Q4 2025."
+    },
+    {
+      "name": "why_headline",
+      "section": "why I wrote to you",
+      "type": "CUSTOM",
+      "what_fills_it": "A short H2. Default: This role, at this organization.",
+      "source": "Written for the page. Keep it plain."
+    },
+    {
+      "name": "why_this_org",
+      "section": "why I wrote to you",
+      "type": "CUSTOM",
+      "what_fills_it": "Two short paragraphs: what they do, and why she is writing to them rather than to a stack of other orgs. Only use cause overlap she can honestly claim (for example Environmental Fund of BC or Stanley Park Ecology Society, already on the services page). No flattery, no invented history with the org.",
+      "source": "The organization's public about page plus her resume and the approved services-page experience lines. Ask her before using World Vision as a personal connection, or any other personal cause."
+    },
+    {
+      "name": "personal_connection",
+      "section": "a personal note",
+      "type": "OPTIONAL CUSTOM",
+      "what_fills_it": "A short, specific reason this org or cause matters to her. Default is to omit the whole block. Never fill this from inference.",
+      "source": "Alessandra, approved for this organization, this time only. Allowed personal connections she has already named in principle: World Vision, her death doula work, and causes she later names. Still ask each time."
+    },
+    {
+      "name": "posted_salary_annual",
+      "section": "offer, cost",
+      "type": "CUSTOM",
+      "what_fills_it": "The posted annual salary as a number. If a range, store low, high and midpoint.",
+      "source": "The posting. If no salary is posted, do not invent one. Hold the cost numbers and ask Alessandra how to price it, still respecting the CA$3,000 monthly floor."
+    },
+    {
+      "name": "posted_salary_display",
+      "section": "offer, cost",
+      "type": "CUSTOM",
+      "what_fills_it": "Human-readable posted salary, including currency and 'plus benefits' if that is true. Example: CA$84,000 a year, plus benefits.",
+      "source": "posted_salary_annual and the posting's benefits language."
+    },
+    {
+      "name": "currency",
+      "section": "offer, cost",
+      "type": "CUSTOM",
+      "what_fills_it": "CAD, USD, or another posting currency. Display with a clear prefix (CA$, US$).",
+      "source": "The posting. Default CAD for Canadian organizations."
+    },
+    {
+      "name": "monthly_fee",
+      "section": "offer, cost",
+      "type": "CUSTOM, calculated",
+      "what_fills_it": "The monthly managed-service fee, as a number. Half the posted annual salary, divided by 12, rounded to a clean figure, never under CA$3,000.",
+      "source": "Calculated from posted_salary_annual using the pricing_rules above. Alessandra can override before approval."
+    },
+    {
+      "name": "monthly_fee_display",
+      "section": "offer, cost",
+      "type": "CUSTOM",
+      "what_fills_it": "Human-readable fee. Example: CA$3,500 a month.",
+      "source": "monthly_fee."
+    },
+    {
+      "name": "price_vs_salary",
+      "section": "offer, cost",
+      "type": "CUSTOM",
+      "what_fills_it": "The side-by-side comparison of posted salary versus the monthly fee, plus the fixed framing: half is a target, no benefits package on top, floor of CA$3,000, pilot discussed once talking.",
+      "source": "posted_salary_display, monthly_fee_display, and the fixed offer copy on the services page."
+    },
+    {
+      "name": "requirement_match_table",
+      "section": "the fit",
+      "type": "CUSTOM",
+      "what_fills_it": "A row for each real requirement in the posting. Columns: the posting asks for, what I bring, and a flag of Match, Partial or Gap. Evidence must be resume-backed or already on the services page. Gaps stay visible. Never invent a metric, title, tool or result to force a Match. Salesforce donor-journey results that are still [ADD] on the resume must stay unclaimed.",
+      "source": "The posting's requirements, mapped to the resume (World Vision Senior Marketing Advisor; 20+ years retention and CRM; Salesforce plus HubSpot, Pardot, Marketo, Eloqua, SharpSpring; up to 40 accounts; customer churn 18% to 15%; commercial results only where relevant and clearly labelled; BCIT Marketing Communications Management; Chartered Marketer). Stanley Park Ecology Society and the Salvation Army may be named, without invented titles, dates or results. Environmental Fund of BC may be named as on the services page."
+    },
+    {
+      "name": "match_score",
+      "section": "internal, not shown on the page",
+      "type": "CUSTOM",
+      "what_fills_it": "A private score used to decide whether the page includes a personal video, and whether this role is one of the ones she pitches first. Not printed on the page.",
+      "source": "The match table, plus her existing pipeline rules (remote versus hybrid, salary floor, personal connection, no-AI postings skipped)."
+    },
+    {
+      "name": "personal_video",
+      "section": "about",
+      "type": "OPTIONAL CUSTOM",
+      "what_fills_it": "A short video recorded for this org, or a coming-soon slot with a caption that names them. Include the slot only for the highest match scores. Otherwise omit it and let the hero portrait introduce her.",
+      "source": "A recording Alessandra makes after the page is drafted. Caption uses org_name."
+    },
+    {
+      "name": "personal_video_caption",
+      "section": "about",
+      "type": "OPTIONAL CUSTOM",
+      "what_fills_it": "Caption inside the video slot. Pattern: A one-minute note for {{short_org_name}}, coming soon. Or the title of the finished video.",
+      "source": "org_name, and the video file once it exists."
+    },
+    {
+      "name": "first_90_days",
+      "section": "the first season",
+      "type": "CUSTOM",
+      "what_fills_it": "Three phases: days 1 to 30, 31 to 60, and 61 to 90. Each has a short title and a few sentences of actual work, tied to the posting, not generic consulting steps. This is a plan, not a results claim. Anything going out to donors still needs their approval.",
+      "source": "The posting's first-year or key-responsibility language, translated into a 90-day sequence in her voice."
+    },
+    {
+      "name": "work_mode",
+      "section": "the fit, FAQ",
+      "type": "CUSTOM",
+      "what_fills_it": "remote, hybrid, or on-site, plus any travel or city requirement from the posting.",
+      "source": "The posting. She is based in Vancouver and works remotely with organizations in Canada, the US and internationally. On-site outside that, or daily office attendance, is usually a Gap."
+    },
+    {
+      "name": "work_mode_answer",
+      "section": "FAQ",
+      "type": "CUSTOM",
+      "what_fills_it": "The answer to 'Do you work in our office?' Honest about her Vancouver remote practice, and about any gap if the role is on-site.",
+      "source": "work_mode plus the fixed remote-work line from the services page."
+    },
+    {
+      "name": "faq_extra",
+      "section": "FAQ",
+      "type": "OPTIONAL CUSTOM",
+      "what_fills_it": "Any extra question the posting raises that the standard list does not cover, for example a required certification she does not have, or a language requirement. Omit if nothing extra is needed. The 'Is this a job application?' and 'What if we still want to hire?' questions stay on every role page.",
+      "source": "The posting, plus her resume when the answer is about credentials."
+    },
+    {
+      "name": "contact_headline",
+      "section": "invitation",
+      "type": "CUSTOM",
+      "what_fills_it": "The contact H2. Pattern, when the role is donor-facing: Picture the thank-yous going out the same week, at {{short_org_name}}. For other roles, picture the specific relief named in the posting, and still name the org.",
+      "source": "org_name and the main pain in the posting. Do not invent a result."
+    },
+    {
+      "name": "contact_lead",
+      "section": "invitation",
+      "type": "CUSTOM",
+      "what_fills_it": "Two or three short sentences of the relief picture, then an invitation to talk about this role.",
+      "source": "The posting's desired outcomes, said plainly, with no promised metrics."
+    },
+    {
+      "name": "form_subject",
+      "section": "form, mailto",
+      "type": "CUSTOM",
+      "what_fills_it": "Email subject for form submissions and the mailto fallback. Pattern: Conversation about the {{role_title}} role at {{org_name}}.",
+      "source": "role_title and org_name."
+    },
+    {
+      "name": "form_thanks_url",
+      "section": "form",
+      "type": "CUSTOM, usually FIXED once hosting is set",
+      "what_fills_it": "The URL FormSubmit should send people to after they write in. Until a role-page thanks page exists, use the same thanks page as the services site, or https://exhalemarketing.com/thanks.html once that is live.",
+      "source": "Hosting setup. Confirm before the first live page."
+    },
+    {
+      "name": "reply_time",
+      "section": "invitation",
+      "type": "CUSTOM, pending",
+      "what_fills_it": "How soon she will read and reply. Currently shown as a yellow [CONFIRM] box, same as the services page. Replace the box once she names a time, for example 'within 2 business days'.",
+      "source": "Alessandra. Do not invent a reply time."
+    }
+  ],
+  "fixed_sections": [
+    {
+      "id": "header_footer_chrome",
+      "what": "Brand, fonts (Source Serif 4 and Source Sans 3), colours (#1f4a46, #faf8f3, #1d2b2a, #a8782a), leaf-and-vine-with-circuit-veins signature, portrait, sticky mobile CTA, footer.",
+      "source": "The services landing page, kept exactly as is."
+    },
+    {
+      "id": "credentials",
+      "what": "Senior Marketing Advisor, World Vision. 20+ years in CRM and retention. Chartered Marketer (CM).",
+      "source": "Services page and resume."
+    },
+    {
+      "id": "about",
+      "what": "Hi, I'm Alessandra, including the World Vision, Environmental Fund of BC, Stanley Park Ecology Society and Salvation Army lines, plus the availability line and the Vancouver / remote line.",
+      "source": "Services page about section, reused word for word so the two pages do not drift."
+    },
+    {
+      "id": "path",
+      "what": "How it works: free 20-minute call, listen, embed for 1 to 3 months, stay accountable.",
+      "source": "Services page path section, reused word for word."
+    },
+    {
+      "id": "proof",
+      "what": "18% to 15% customer churn, and the five testimonials (Matthew Scott, Ama Liddar, Kallon John, Ted L. Simon, Clark Fegraus).",
+      "source": "Services page. Kallon John's label stays 'Client' until Alessandra confirms a better one. Do not recast the churn figure as a donor-retention result."
+    },
+    {
+      "id": "trust",
+      "what": "You approve what goes out. Only the access we agree on. One accountable person. Straight answers.",
+      "source": "Services page trust section, reused word for word."
+    },
+    {
+      "id": "faq_standard",
+      "what": "Small team, new software, donor data access, no guaranteed results, contractor not employee, work outside Canada.",
+      "source": "Services page FAQ, reused word for word, plus the two role-page questions about applications and later hiring."
+    }
+  ]
+}
