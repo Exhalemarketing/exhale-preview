@@ -69,3 +69,4 @@
 .stressed h3{font-size:21px;margin-bottom:10px}.stressed ul{margin:0;padding-left:18px}.stressed li{margin:10px 0;font-size:16px}
 .stressed strong{display:block;color:var(--forest)}
 @media (max-width:960px){.qa-grid{grid-template-columns:1fr}}
+.asks{display:grid;gap:14px;margin-top:18px}.asks .ask{background:#fff;border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:10px;padding:16px 20px}.asks .ask h3{font-size:18px;margin:0 0 6px}.asks .ask p{margin:0}
