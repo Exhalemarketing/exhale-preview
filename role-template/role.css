@@ -62,3 +62,10 @@
 .contact-solo .btn{background:#fff;color:var(--forest);margin-top:8px}
 .contact-solo .btn:hover{background:#e6efeb;color:var(--forest-d)}
 .contact-solo .next{margin:8px 0 22px}
+/* 6b. Application questions and stressed priorities */
+.qa-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:start;margin-top:26px}
+.qa-list details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:12px}
+.stressed{background:#fff;border:1px solid var(--line);border-left:3px solid var(--sage);border-radius:10px;padding:22px 24px}
+.stressed h3{font-size:21px;margin-bottom:10px}.stressed ul{margin:0;padding-left:18px}.stressed li{margin:10px 0;font-size:16px}
+.stressed strong{display:block;color:var(--forest)}
+@media (max-width:960px){.qa-grid{grid-template-columns:1fr}}
