@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Visitor enquiry persists",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": ["contact form", "backend database save", "confirmation"],
+    "description": "Ensure a fully completed enquiry is accepted only after durable storage.",
+    "steps": [
+      "Go to contact form",
+      "Enter name, valid email, organization and message",
+      "Submit"
+    ],
+    "expected": "Receipt appears after the backend accepts and saves the enquiry."
+  },
+  {
+    "name": "Diagnostic is a useful ungated calculation",
+    "viewport": "desktop",
+    "covers": ["diagnostic", "transparent math", "form prefill"],
+    "description": "Check calculator arithmetic and no-email first result.",
+    "steps": [
+      "Find the lead flow tool",
+      "Enter 200 leads, 140 contacted and 14 won",
+      "Check the result and click discuss these results"
+    ],
+    "expected": "60 leads without recorded contact and a 70% contact rate are shown, without an email gate, and enquiry context is populated."
+  },
+  {
+    "name": "Mobile invalid input",
+    "viewport": "mobile",
+    "covers": [
+      "mobile layout",
+      "diagnostic validation",
+      "required form fields"
+    ],
+    "description": "Check small-screen functionality and truthful error handling.",
+    "steps": [
+      "Open page on mobile",
+      "Set contacts above total leads",
+      "Try calculating",
+      "Submit empty contact form"
+    ],
+    "expected": "Invalid figures are rejected and missing contact information is not submitted."
+  },
+  {
+    "name": "Ethical and accessible proof",
+    "viewport": "desktop",
+    "covers": [
+      "source-specific proof",
+      "pricing conditions",
+      "no exaggerated outcome promises"
+    ],
+    "description": "Confirm source-specific credibility and appropriate safeguards.",
+    "steps": [
+      "Review hero and service sections",
+      "Review diagnostic disclaimer",
+      "Review offers and footer"
+    ],
+    "expected": "Relevant leader, brand and services are present, results are not guaranteed, and engagement expectations are explicit."
+  }
+]
