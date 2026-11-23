@@ -8,26 +8,28 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap">
 <style>
-:root{--ink:#172d37;--bg:#f8f7f3;--dark:#0e2a33;--soft:#fff}
+:root{--ink:#172d37;--bg:#f8f7f3;--dark:#0e2a33;--soft:#ffffff}
+*{box-sizing:border-box}
 body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-.wrap{max-width:980px;margin:0 auto;padding:3.5rem 1.5rem}
-.private{background:#eee;padding:.6rem;text-align:center;font-size:.8rem}
-h1{font-family:"Libre Baskerville",Georgia,serif;font-size:2.6rem;line-height:1.1;font-weight:400;margin:.8rem 0}
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
-.funnel-box{background:var(--dark);color:#fff;padding:1.5rem;border-radius:6px}
-.funnel-bar{display:flex;align-items:center;margin:.6rem 0;font-size:.85rem}
-.funnel-bar span{flex:1}
-.funnel-bar .bar{height:10px;background:#3a6a78;margin-right:.5rem}
-.section{margin:4rem 0}
+.wrap{max-width:1040px;margin:0 auto;padding:4rem 1.5rem}
+.private{background:#eee;padding:.7rem;text-align:center;font-size:.8rem}
+h1{font-family:"Libre Baskerville",Georgia,serif;font-size:2.7rem;line-height:1.08;font-weight:400;margin:.6rem 0 1rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+.funnel-box{background:var(--dark);color:#fff;padding:1.6rem 1.4rem;border-radius:6px}
+.funnel-bar{display:flex;align-items:center;gap:.6rem;margin:.55rem 0;font-size:.82rem}
+.funnel-bar .label{width:110px}
+.funnel-bar .bar{flex:1;height:12px;background:#3a6a78;border-radius:2px}
+.funnel-bar .pct{width:36px;text-align:right;font-weight:600}
+.section{margin:4.5rem 0}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
-.card{background:var(--soft);padding:1.2rem;border:1px solid #e5e5e5;border-radius:4px}
-.steps-row{display:flex;gap:1rem;margin:1.5rem 0;flex-wrap:wrap}
-.step{flex:1;min-width:140px;background:var(--soft);padding:1rem;border:1px solid #e5e5e5;position:relative}
-.step:after{content:"→";position:absolute;right:-.8rem;top:50%;transform:translateY(-50%);color:#999}
-.step:last-child:after{display:none}
-a.cta{display:inline-block;background:var(--dark);color:#fff;padding:.6rem 1.2rem;text-decoration:none;border-radius:3px;font-weight:500}
+.card{background:var(--soft);padding:1.3rem;border:1px solid #e6e6e6;border-radius:4px}
+.steps-row{display:flex;gap:.8rem;margin:1.5rem 0}
+.step{flex:1;background:var(--soft);padding:1rem;border:1px solid #e6e6e6;position:relative;font-size:.9rem}
+.step:after{content:"→";position:absolute;right:-.7rem;top:50%;transform:translateY(-50%);color:#aaa;font-size:1.1rem}
+.step:last-child:after{content:none}
+a.cta{display:inline-block;background:var(--dark);color:#fff;padding:.65rem 1.3rem;text-decoration:none;border-radius:3px;font-weight:500;font-size:.95rem}
 a.cta:after{content:" ↗"}
-.dark-section{background:var(--dark);color:#fff;padding:3rem 0;margin:2rem 0}
+.dark-section{background:var(--dark);color:#fff;padding:3.5rem 0}
 </style>
 </head>
 <body>
@@ -35,69 +37,69 @@ a.cta:after{content:" ↗"}
 <div class="wrap">
 <div class="hero">
 <div>
-<p style="font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem">Lifecycle Marketing Manager · Remote Canada</p>
+<p style="font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .4rem;color:#666">Lifecycle Marketing Manager · Remote Canada</p>
 <h1>What happened to the leads you already paid for?</h1>
 <p>Your posting is clear: design, build, and operate scalable lifecycle journeys across email, push, and in-app to drive activation, retention, and revenue. That work sits exactly where most of the value leaks — after the signup.</p>
-<p><a class="cta" href="#contact">Book a short call</a></p>
-<p style="font-size:.85rem;margin-top:1rem">Armand · Exhale Consulting<br>Commercial operations and growth systems</p>
+<p style="margin-top:1.4rem"><a class="cta" href="#contact">Book a short call</a></p>
+<p style="font-size:.85rem;margin-top:1.2rem;color:#555">Armand · Exhale Consulting<br>Commercial operations and growth systems</p>
 </div>
 <div class="funnel-box">
-<p style="font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 1rem">Illustrative pipeline · not client data</p>
-<div class="funnel-bar"><span>SIGNUP</span><div class="bar" style="width:100%"></div><strong>100%</strong></div>
-<div class="funnel-bar"><span>ACTIVATED</span><div class="bar" style="width:65%"></div><strong>?</strong></div>
-<div class="funnel-bar"><span>RETAINED</span><div class="bar" style="width:40%"></div><strong>?</strong></div>
-<div class="funnel-bar"><span>EXPANDED</span><div class="bar" style="width:25%;background:#c9a66b"></div><strong>?</strong></div>
-<p style="font-size:.75rem;margin-top:1rem;opacity:.8">Your actual numbers belong in the diagnostic below.</p>
+<p style="font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 1.1rem;opacity:.85">Illustrative pipeline · not client data</p>
+<div class="funnel-bar"><span class="label">SIGNUP</span><div class="bar" style="width:100%"></div><span class="pct">100%</span></div>
+<div class="funnel-bar"><span class="label">ACTIVATED</span><div class="bar" style="width:68%"></div><span class="pct">?</span></div>
+<div class="funnel-bar"><span class="label">RETAINED</span><div class="bar" style="width:42%"></div><span class="pct">?</span></div>
+<div class="funnel-bar"><span class="label">EXPANDED</span><div class="bar" style="width:28%;background:#c9a66b"></div><span class="pct">?</span></div>
+<p style="font-size:.75rem;margin:1.1rem 0 0;opacity:.8">Your actual numbers belong in the diagnostic below.</p>
 </div>
 </div>
 </div>
 
 <div class="section">
 <div class="wrap">
-<h2>More signups won’t fix a journey that loses people after the first session.</h2>
+<h2 style="font-family:'Libre Baskerville',serif;font-weight:400;font-size:1.8rem">More signups won’t fix a journey that loses people after the first session.</h2>
 <p>What are you paying to acquire? And what actually happens once the user is inside Joist or Invoice Simple?</p>
 </div>
 </div>
 
 <div class="section">
 <div class="wrap">
-<h2>The user signed up. What happened next?</h2>
+<h2 style="font-family:'Libre Baskerville',serif;font-weight:400;font-size:1.8rem">The user signed up. What happened next?</h2>
 <p>You’re already investing in demand. But getting the signup is only the beginning. The journeys that move someone from first invoice to active use to retained customer are where the revenue is won or lost.</p>
 </div>
 </div>
 
 <div class="section">
 <div class="wrap">
-<h2>Your funnel isn’t one step. It can break at every handoff.</h2>
+<h2 style="font-family:'Libre Baskerville',serif;font-weight:400;font-size:1.8rem">Your funnel isn’t one step. It can break at every handoff.</h2>
 <div class="steps-row">
-<div class="step"><strong>01</strong><br>Signup arrives<br><small>Was the first message timely and relevant?</small></div>
-<div class="step"><strong>02</strong><br>Activation starts<br><small>Is there a clear path to first value?</small></div>
-<div class="step"><strong>03</strong><br>Usage continues<br><small>Do the journeys reinforce the right behaviors?</small></div>
-<div class="step"><strong>04</strong><br>Retention measured<br><small>Can you see what keeps people and what quietly loses them?</small></div>
+<div class="step"><strong>01</strong><br>Signup arrives<br><small style="color:#666">Was the first message timely and relevant?</small></div>
+<div class="step"><strong>02</strong><br>Activation starts<br><small style="color:#666">Is there a clear path to first value?</small></div>
+<div class="step"><strong>03</strong><br>Usage continues<br><small style="color:#666">Do the journeys reinforce the right behaviors?</small></div>
+<div class="step"><strong>04</strong><br>Retention measured<br><small style="color:#666">Can you see what keeps people and what quietly loses them?</small></div>
 </div>
-<p style="background:#eee;padding:.8rem;font-size:.9rem">A list of events in the platform is not the same thing as a functioning lifecycle.</p>
+<p style="background:#eee;padding:.9rem;font-size:.9rem;margin-top:1rem">A list of events in the platform is not the same thing as a functioning lifecycle.</p>
 </div>
 </div>
 
 <div class="section">
 <div class="wrap">
-<h2>Let’s fix the gaps between signup and retained revenue.</h2>
+<h2 style="font-family:'Libre Baskerville',serif;font-weight:400;font-size:1.8rem">Let’s fix the gaps between signup and retained revenue.</h2>
 <div class="cards">
 <div class="card"><strong>Journey builds</strong><br>Design and operate email, push, and in-app journeys that drive activation and retention.</div>
 <div class="card"><strong>Data and logic</strong><br>Tighten event tracking, segmentation, suppression, and frequency so the right message reaches the right user.</div>
 <div class="card"><strong>Measurement</strong><br>Set the QA and reporting so you can see what actually moves activation and retention.</div>
 <div class="card"><strong>Process ownership</strong><br>One person accountable for the defined production. Automation handles the repeatable parts.</div>
 </div>
-<p style="font-size:.85rem">No fabricated case studies or unsupported improvement claims. We will establish a baseline and measure results from your own data.</p>
-<p><strong>On average, about half the cost of the hire.</strong> We can start with a short pilot so you see the work before a longer commitment.</p>
+<p style="font-size:.85rem;color:#555">No fabricated case studies or unsupported improvement claims. We will establish a baseline and measure results from your own data.</p>
+<p style="margin-top:1rem"><strong>On average, about half the cost of the hire.</strong> We can start with a short pilot so you see the work before a longer commitment.</p>
 </div>
 </div>
 
 <div class="dark-section" id="contact">
 <div class="wrap">
-<h2 style="color:#fff">What part of the journey is currently leaking?</h2>
+<h2 style="font-family:'Libre Baskerville',serif;font-weight:400;font-size:1.9rem;color:#fff">What part of the journey is currently leaking?</h2>
 <p>Tell me which stage worries you most. I’ll tell you straight if I can help.</p>
-<p><a class="cta" href="mailto:armand@exhalemarketing.com?subject=EverPro%20Lifecycle%20Marketing%20Manager">Send a note</a></p>
+<p style="margin-top:1.4rem"><a class="cta" href="mailto:armand@exhalemarketing.com?subject=EverPro%20Lifecycle%20Marketing%20Manager" style="background:#fff;color:var(--dark)">Send a note</a></p>
 </div>
 </div>
 </body>
