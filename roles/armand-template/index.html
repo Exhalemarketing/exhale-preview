@@ -1,38 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>A note for [Company] | Armand · Exhale</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
-:root{--ink:#172d37;--bg:#f8f7f3;--accent:#172d37}
+:root{--ink:#172d37;--bg:#f8f7f3;--soft:#fff}
 body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
 .wrap{max-width:720px;margin:0 auto;padding:4rem 1.5rem}
-.private{background:#eee;padding:.8rem;text-align:center;font-size:.85rem}
-h1{font-size:2.4rem;line-height:1.15;font-weight:400;margin:1.2rem 0 .6rem}
-.lead{font-size:1.1rem;margin:.8rem 0 1.5rem}
-.funnel{display:flex;justify-content:space-between;margin:2.5rem 0;padding:1.5rem;background:#fff;border-radius:6px;text-align:center;font-size:.85rem}
+.private{background:#eee;padding:.75rem;text-align:center;font-size:.85rem}
+h1{font-family:"Libre Baskerville",Georgia,serif;font-size:2.45rem;line-height:1.15;font-weight:400;margin:1rem 0 .5rem}
+.lead{font-size:1.1rem;margin:.6rem 0 1.4rem}
+.hero-grid{display:grid;grid-template-columns:1fr 180px;gap:2rem;align-items:start}
+.portrait img{width:100%;border-radius:4px}
+.funnel{display:flex;justify-content:space-between;margin:2.5rem 0;padding:1.4rem;background:var(--soft);border-radius:6px;text-align:center;font-size:.85rem}
 .funnel div{flex:1}
-.funnel strong{display:block;font-size:1.5rem;margin-top:.4rem}
-.section{margin:3.5rem 0}
-.steps{counter-reset:step;padding:0}
-.steps li{list-style:none;position:relative;padding-left:3rem;margin:1.4rem 0}
+.funnel strong{display:block;font-size:1.4rem;margin-top:.3rem}
+.section{margin:3.2rem 0}
+.steps{counter-reset:step;padding:0;margin:0}
+.steps li{list-style:none;position:relative;padding-left:2.8rem;margin:1.3rem 0}
 .steps li:before{counter-increment:step;content:counter(step, decimal-leading-zero);position:absolute;left:0;font-weight:600}
-a.cta{color:var(--accent);font-weight:600;text-decoration:none}
+a.cta{color:var(--ink);font-weight:600;text-decoration:none}
 a.cta:after{content:" ↗"}
 </style>
 </head>
 <body>
 <div class="private">A private note for the hiring team at [Company] · Armand · Exhale Consulting</div>
 <div class="wrap">
-<p style="font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">[Role Title] · Remote</p>
+<div class="hero-grid">
+<div>
+<p style="font-size:.8rem;letter-spacing:.05em;text-transform:uppercase">[Role Title] · Remote</p>
 <h1>What happened to the leads <em>you already paid for?</em></h1>
 <p class="lead">The lead came in. What happened next?</p>
 <p>[One sentence connecting the role to the handoff / journey problem.]</p>
 <p><a class="cta" href="#contact">Book a short call</a></p>
+</div>
+<figure class="portrait">
+<img src="https://raw.githubusercontent.com/Exhalemarketing/exhale-preview/main/assets/armand-portrait.jpg" alt="Armand" width="180">
+<figcaption style="font-size:.8rem;margin-top:.4rem">Armand · Exhale Consulting</figcaption>
+</figure>
+</div>
 
 <div class="funnel">
 <div>SIGNUP<br><strong>100%</strong></div>
@@ -40,7 +50,7 @@ a.cta:after{content:" ↗"}
 <div>RETAINED<br><strong>?</strong></div>
 <div>EXPANDED<br><strong>?</strong></div>
 </div>
-<p style="font-size:.75rem;text-align:center;opacity:.7">Illustrative stages · not client data</p>
+<p style="font-size:.75rem;text-align:center;opacity:.65">Illustrative stages · not client data</p>
 
 <div class="section">
 <h2>More [leads/features] won’t fix a process that loses people after the first step.</h2>
