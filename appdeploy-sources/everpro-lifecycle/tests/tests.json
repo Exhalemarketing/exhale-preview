@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Role-specific story and navigation",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "EverPro role context",
+      "candidate identity",
+      "approach navigation"
+    ],
+    "description": "Checks personalized page and navigation to practical lifecycle approach.",
+    "steps": [
+      "Open page",
+      "Read the opening and candidate identity",
+      "Click How I'd approach the role"
+    ],
+    "expected": "Page identifies Armand as an independent candidate for Joist lifecycle marketing and scrolls to his proposed approach."
+  },
+  {
+    "name": "Mobile readable role profile",
+    "viewport": "mobile",
+    "covers": ["responsive hero", "90-day plan", "experience disclosures"],
+    "description": "Checks the role-specific content is readable on small screens.",
+    "steps": [
+      "Open page on mobile",
+      "Read first section and scroll through 90-day plan",
+      "Review background"
+    ],
+    "expected": "No content is clipped, experience is presented accurately and non-verified platform proficiency is not claimed."
+  },
+  {
+    "name": "External company links",
+    "viewport": "desktop",
+    "covers": ["reference job listing", "Exhale website"],
+    "description": "Checks the external information and original business website are accessible from the page.",
+    "steps": [
+      "Find role description link",
+      "Find Learn more about Exhale link"
+    ],
+    "expected": "Links are clearly labeled and point to the intended external websites."
+  }
+]
