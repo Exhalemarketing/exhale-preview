@@ -1,0 +1,366 @@
+/* Generated using AppDeploy UI skill */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
+:root {
+  --navy: #132f3b;
+  --ink: #17353e;
+  --muted: #50656c;
+  --paper: #faf9f5;
+  --soft: #e9eeeb;
+  --line: #d1dcdb;
+  --gold: #b99b65;
+  --serif: 'Libre Baskerville', Georgia, serif;
+  --sans: 'DM Sans', Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  font: 16px/1.7 var(--sans);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+}
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+.wrap {
+  max-width: 1160px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.nav {
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  text-decoration: none;
+  font: 30px/1 var(--serif);
+  letter-spacing: -2px;
+}
+.logo span {
+  color: var(--gold);
+}
+.nav-link {
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  font-weight: 700;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 75px;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 93px;
+}
+.eyebrow,
+.small {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #60847b;
+}
+.hero h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  line-height: 1.19;
+}
+.hero h1 {
+  font-size: clamp(42px, 4.55vw, 64px);
+  margin: 24px 0;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #447c77;
+}
+.deck {
+  font-size: 18px;
+  color: #3d565c;
+  line-height: 1.75;
+  max-width: 590px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 23px;
+  margin: 30px 0 10px;
+}
+.primary {
+  display: inline-flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: #fff;
+  padding: 15px 21px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  min-height: 52px;
+}
+.primary:hover {
+  background: #255263;
+}
+.text-link {
+  font-size: 13px;
+  font-weight: 700;
+}
+.little,
+.fine {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.image-wrap {
+  max-width: 430px;
+  justify-self: center;
+  width: 100%;
+}
+.image-frame {
+  height: 430px;
+  background: linear-gradient(155deg, #d5dddd, #879ca1);
+  position: relative;
+  overflow: hidden;
+}
+.image-frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.image-frame.image-fallback:after {
+  content: 'Armand Sagredo';
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 32px var(--serif);
+  color: #17353e;
+}
+.portrait-caption {
+  background: white;
+  border: 1px solid var(--line);
+  border-top: 0;
+  padding: 15px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.portrait-caption b {
+  font: 19px var(--serif);
+}
+.portrait-caption span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.statement {
+  background: #e7eee9;
+  border-block: 1px solid var(--line);
+}
+.statement-inner {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 45px;
+  align-items: start;
+  padding-top: 47px;
+  padding-bottom: 50px;
+}
+.statement p {
+  font: 23px/1.58 var(--serif);
+  margin: 0;
+  max-width: 790px;
+}
+.section {
+  padding: 90px 0;
+  border-top: 1px solid var(--line);
+}
+.section h2 {
+  font-size: clamp(31px, 3.6vw, 46px);
+  max-width: 810px;
+  margin: 20px 0 25px;
+}
+.section p {
+  max-width: 750px;
+}
+.intro {
+  max-width: 780px;
+}
+.journey {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 40px;
+}
+.journey article {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 32px 25px;
+  position: relative;
+}
+.journey article:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--gold);
+}
+.journey article span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #618079;
+  font-weight: 700;
+}
+.journey h3 {
+  font-size: 23px;
+  margin: 25px 0 12px;
+}
+.journey p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.deep {
+  background: var(--navy);
+  color: white;
+}
+.deep .eyebrow {
+  color: #bcd4c8;
+}
+.deep h2 {
+  color: #fff;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 50px;
+}
+.timeline > div {
+  padding-top: 24px;
+  border-top: 1px solid #77969a;
+}
+.timeline b {
+  font-size: 13px;
+  color: #e5d2ab;
+}
+.timeline h3 {
+  font-size: 23px;
+  margin: 14px 0;
+}
+.timeline p {
+  font-size: 14px;
+  line-height: 1.78;
+  color: #dce8e6;
+}
+.bg {
+  background: #f0f2ed;
+}
+.bio {
+  display: grid;
+  grid-template-columns: 0.87fr 1.13fr;
+  gap: 75px;
+}
+.bio p {
+  margin-top: 0;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0;
+}
+.chips span {
+  font-size: 12px;
+  background: white;
+  border: 1px solid #cdd9d2;
+  padding: 9px 12px;
+  border-radius: 20px;
+}
+.fine {
+  margin-top: 24px;
+}
+.why {
+  background: #fff;
+}
+.why p {
+  font-size: 17px;
+}
+.why .primary {
+  margin-top: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 12px;
+  color: var(--muted);
+}
+@media (max-width: 850px) {
+  .hero,
+  .bio,
+  .statement-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero {
+    padding: 38px 0 65px;
+  }
+  .image-wrap {
+    justify-self: start;
+    max-width: 400px;
+  }
+  .section {
+    padding: 65px 0;
+  }
+  .journey,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .statement p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .wrap {
+    padding-inline: 20px;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .image-frame {
+    height: 320px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .actions {
+    gap: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
