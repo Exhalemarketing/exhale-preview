@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap">
 <style>
-/* Full CSS from appdeploy-sources/b2b-revenue-recovery/src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
 :root{--paper:#faf8f2;--ink:#1b3437;--deep:#234d51;--accent:#ba9969;--muted:#55686a;--soft:#eaf0e9;--line:#d6ded8;--serif:'Libre Baskerville',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
 body.b2b{--paper:#f8f7f3;--ink:#172d37;--deep:#173f50;--accent:#c49a5c;--muted:#4c636d;--soft:#e9eef0;--line:#d1dadc}
 *{box-sizing:border-box}
@@ -24,7 +24,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.72 var(--sans
 .hero h1{font-size:clamp(39px,4.75vw,67px);letter-spacing:-2px;margin:0 0 27px}
 .hero h1 em{font-style:normal;color:#32617b}
 .lead{font-size:18px;line-height:1.68;max-width:580px;color:#405b5c;margin:0 0 30px}
-.btn,.send{display:inline-flex;align-items:center;gap:17px;justify-content:center;background:var(--deep);color:#fff;border:1px solid var(--deep);padding:15px 24px;min-height:52px;font-weight:700;font-size:13px;text-decoration:none;cursor:pointer}
+.btn{display:inline-flex;align-items:center;background:var(--deep);color:#fff;border:1px solid var(--deep);padding:15px 24px;min-height:52px;font-weight:700;font-size:13px;text-decoration:none}
 .micro{margin:14px 0 0;color:var(--muted);font-size:12px}
 .hero-art{height:448px;background:#173f50;display:flex;align-items:center;justify-content:center;padding:26px;color:#fff}
 .leak-art{width:100%;max-width:430px}
@@ -36,8 +36,15 @@ body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.72 var(--sans
 .funnel:nth-of-type(5) > div{width:46%;background:#dcb57b}
 .funnel span{text-align:right;color:#e8efee;font:17px var(--serif)}
 .art-note{font:15px/1.6 var(--serif);color:#e8f0ed;margin-top:23px}
+.proof{background:var(--soft);border-block:1px solid var(--line)}
+.proof .wrap{padding:27px 0;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.proof-lead{font:20px/1.5 var(--serif)}
 .section{padding:92px 0;border-top:1px solid var(--line)}
 .section h2{font-size:clamp(30px,3.4vw,46px);margin:0 0 23px;max-width:860px}
+.story{background:#f1efe7}
+.story .split{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px}
+.story .first{font:23px/1.55 var(--serif)}
+.process{background:#fff}
 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:38px 0 25px}
 .flow article{background:#f1f4f5;border:1px solid var(--line);padding:23px;min-height:190px;position:relative}
 .flow article:not(:last-child):after{content:'→';position:absolute;right:-17px;top:49%;z-index:1;background:#fff;padding:0 4px;color:var(--deep);font-size:21px}
@@ -52,7 +59,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.72 var(--sans
 .last{background:var(--deep);color:#fff}
 .last h2{color:#fff}
 .private{background:#eee;padding:.6rem;text-align:center;font-size:.8rem}
-@media(max-width:850px){.hero{grid-template-columns:1fr;gap:32px}.flow{grid-template-columns:repeat(2,1fr)}.flow article:not(:last-child):after{display:none}}
+@media(max-width:850px){.hero,.proof .wrap,.story .split{grid-template-columns:1fr;gap:32px}.flow{grid-template-columns:repeat(2,1fr)}.flow article:not(:last-child):after{display:none}}
 @media(max-width:570px){.flow,.service-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -79,7 +86,25 @@ body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.72 var(--sans
 </div>
 </div>
 </section>
-<section class="section">
+<section class="proof">
+<div class="wrap">
+<div class="proof-lead">More signups won’t fix a journey that loses people after the first session.</div>
+<div><strong>What are you paying to acquire?</strong><p style="font-size:13px;margin:6px 0 0;color:var(--muted)">And what actually happens once the user is inside Joist or Invoice Simple?</p></div>
+</div>
+</section>
+<section class="story section">
+<div class="wrap split">
+<div>
+<div class="eyebrow">The real issue</div>
+<h2>The user signed up. What happened next?</h2>
+</div>
+<div>
+<p class="first">You’re already investing in demand. But getting the signup is only the beginning.</p>
+<p>The journeys that move someone from first invoice to active use to retained customer are where the revenue is won or lost. I help get those journeys built, the logic tightened, and the measurement clear.</p>
+</div>
+</div>
+</section>
+<section class="process section">
 <div class="wrap">
 <div class="eyebrow">Sound familiar?</div>
 <h2>Your funnel isn’t one step. It can break at every handoff.</h2>
